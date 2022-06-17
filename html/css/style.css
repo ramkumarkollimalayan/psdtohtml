@@ -65,6 +65,10 @@ select {
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   }
 
+  main {
+    overflow-x: hidden;
+}
+
 header {
     background-color: #1d1d1b;
     background-image: url(../images/header-bg.png);
