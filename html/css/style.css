@@ -75,6 +75,19 @@ header {
     padding-bottom: 6px;
 }
 
+.header_nav {
+    min-height: 50px;
+}
+
+.header_nav .navbar.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: #1d1d1b;
+}
+
 .navbar-nav .nav-link {
     color: #d8c48d ;
     font-size: 18px;
@@ -463,7 +476,7 @@ header {
 }
 
 .section-four {
-    padding-top: 300px;
+    margin-top: 252px;
     overflow-x: hidden;
 }
 
@@ -712,7 +725,7 @@ header {
     color: #1d1d1b;
 }
 
-.map-wrap .map-btn a .black-arrow {
+.mapone.map-wrap .map-btn a .black-arrow {
     content: '';
     display: inline-block;
     width: 22px;
@@ -724,11 +737,11 @@ header {
     margin-right: 13px;
 }
 
-.map-wrap .map-btn a:hover .black-arrow {
+.mapone.map-wrap .map-btn a:hover .black-arrow {
     background-image: url(../images/color-left-arrow.png);
 }
 
-.map-wrap .map-btn a .color-arrow {
+.maptwo.map-wrap .map-btn a .color-arrow {
     content: '';
     display: inline-block;
     width: 22px;
@@ -740,7 +753,7 @@ header {
     margin-right: 13px;
 }
 
-.map-wrap .map-btn a .color-arrow {
+.maptwo.map-wrap .map-btn a:hover .color-arrow {
     background-image: url(../images/black-left-arrow.png);
 }
 
