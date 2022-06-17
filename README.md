@@ -1,2 +1,2 @@
 # PSD to HTML Conversion
-This repository describes about the webpage integration which converted from the scratch to HTML with responsive
+PSD to HTML conversion is a quick way to add interactive features into the static image files. This repository contains about the webpage integration from the scratch to HTML with responsive.
