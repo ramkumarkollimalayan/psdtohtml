@@ -38,47 +38,85 @@ $(document).ready(function(){
             scrollTop: $(".section-two").offset().top - navHeight
         },500);
     });
-    /*
-    $("#project").click(function () {
+    
+    $("#mapchart").click(function () {
         var navHeight = $(".header_nav .navbar").outerHeight();
         $("html, body").animate({
-            scrollTop: $(".section-two").offset().top - navHeight
+            scrollTop: $(".section-five").offset().top - navHeight
         },500);
     });
 
-    $("#city").click(function () {
+    $("#purchase").click(function () {
         var navHeight = $(".header_nav .navbar").outerHeight();
         $("html, body").animate({
-            scrollTop: $(".section-two").offset().top - navHeight
+            scrollTop: $(".section-six").offset().top - navHeight
         },500);
     });
 
-    $("#developer").click(function () {
+    $("#payment").click(function () {
         var navHeight = $(".header_nav .navbar").outerHeight();
         $("html, body").animate({
-            scrollTop: $(".section-two").offset().top - navHeight
+            scrollTop: $(".section-eight").offset().top - navHeight
         },500);
     });
 
-    $("#project").click(function () {
+    $("#pricelist").click(function () {
         var navHeight = $(".header_nav .navbar").outerHeight();
         $("html, body").animate({
-            scrollTop: $(".section-two").offset().top - navHeight
+            scrollTop: $(".section-nine").offset().top - navHeight
         },500);
     });
 
-    $("#city").click(function () {
+    $("#plans").click(function () {
         var navHeight = $(".header_nav .navbar").outerHeight();
         $("html, body").animate({
-            scrollTop: $(".section-two").offset().top - navHeight
+            scrollTop: $(".section-plan").offset().top - navHeight
         },500);
     });
 
-    $("#developer").click(function () {
+    $("#documents").click(function () {
         var navHeight = $(".header_nav .navbar").outerHeight();
         $("html, body").animate({
-            scrollTop: $(".section-two").offset().top - navHeight
+            scrollTop: $(".section-eleven").offset().top - navHeight
         },500);
     });
-    */
+    
+    $("#contactus").click(function () {
+        var navHeight = $(".header_nav .navbar").outerHeight();
+        $("html, body").animate({
+            scrollTop: $(".footer-section").offset().top - navHeight
+        },500);
+    });
+
+    $("form.searchBox").submit(function (e) {
+        var postData = $(this).serializeArray();
+        postData[postData.length] = {
+            name: "data",
+            value: "main-table",
+        };
+
+        $([document.documentElement, document.body]).animate({
+                scrollTop: $(".section-ten").offset().top,
+            },
+            300
+        );
+
+        $.ajax({
+            url: actionLink,
+            type: "POST",
+            data: postData,
+            success: function (data, textStatus, jqXHR) {
+                $("html, body").animate({
+                        scrollTop: $("#pricelist").offset().top - navHeight,
+                    },
+                    2000
+                );
+                $(".tab_table").html(data);
+            },
+            error: function (request, error) {
+                console.log(error);
+            },
+        });
+        e.preventDefault();
+    });
 });
