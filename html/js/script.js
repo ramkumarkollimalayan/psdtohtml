@@ -10,6 +10,10 @@ $(document).ready(function(){
         adjustheader();
     });
 
+    $('#navbar-toggler-icon').click(function(){
+		$(this).toggleClass('open');
+	});
+
     function adjustheader(){
         if ($(window).scrollTop() > topheaderheight) {
             if (!$navbar.hasClass("sticky-nav")) {
