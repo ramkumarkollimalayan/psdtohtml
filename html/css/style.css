@@ -81,8 +81,6 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
-    padding-top: 35px;
-    padding-bottom: 6px;
 }
 
 .header_nav {
@@ -101,6 +99,7 @@ header {
 header .navbar {
     padding-top: 0;
     padding-bottom: 0;
+    transition: 1s ease;
 }
 
 .navbar-nav .nav-link {
@@ -114,14 +113,6 @@ header .navbar {
 .navbar-nav .nav-link:hover {
     background-color: #d8c48d;
     color: #1d1d1b;
-}
-
-.price-form form label,
-.price-form form select,
-.price-form form .chkbox,
-.price-form form input[type="submit"] {
-    display: inline-block;
-    vertical-align: middle;
 }
 
 .price-form form label {
@@ -230,7 +221,8 @@ header .navbar {
 }
 
 .topheader {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+    padding-top: 35px;
 }
 
 .section-one {
@@ -479,7 +471,6 @@ header .navbar {
     padding: 25px 25px 225px 25px;
     position: relative;
     z-index: 1;
-    min-height: 577px;
 }
 
 .sec-three-content p {
@@ -517,17 +508,11 @@ header .navbar {
 .carousel-item {
     background-color: #f5f5f5;
     text-align: center;
-    height: 373px;
 }
 
 #myCarousel .list-inline {
     white-space: nowrap;
     overflow-x: auto;
-}
-
-.carousel-inner {
-    width: calc(100% - 88px);
-    margin: 0 auto;
 }
 
 .list-inline-item:last-child {
@@ -542,19 +527,13 @@ header .navbar {
     position: relative;
     left: initial;
     margin-right: initial;
-    width: calc(100% - 88px);
 }
 
 #myCarousel .carousel-indicators > li {
     width: 25%;
-    height: 126px;
     text-indent: initial;
     overflow: hidden;
     opacity: 1;
-}
-
-#myCarousel .carousel-indicators > li img {
-    height: 126px;
 }
 
 .carousel-control-next {
@@ -649,7 +628,6 @@ header .navbar {
     background-color: #d8c48d;
     padding-top: 30px;
     padding-bottom: 30px;
-    min-height: 350px;
     position: relative;
 }
 
@@ -691,12 +669,9 @@ header .navbar {
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 0;
-    padding-right: 44px;
 }
 
 .section-five {
-    padding-top: 225px;
-    padding-bottom: 300px;
     position: relative;
 }
 
@@ -811,16 +786,19 @@ header .navbar {
     color: #1d1d1b;
 }
 
-.mapone.map-wrap .map-btn a .black-arrow {
+.map-wrap .map-btn a span {
     content: "";
     display: inline-block;
     width: 22px;
     height: 20px;
-    background-image: url(../images/black-left-arrow.png);
     background-size: 22px;
     background-repeat: no-repeat;
     background-position: center;
     margin-right: 13px;
+}
+
+.mapone.map-wrap .map-btn a .black-arrow {
+    background-image: url(../images/black-left-arrow.png);
 }
 
 .mapone.map-wrap .map-btn a:hover .black-arrow {
@@ -828,15 +806,7 @@ header .navbar {
 }
 
 .maptwo.map-wrap .map-btn a .color-arrow {
-    content: "";
-    display: inline-block;
-    width: 22px;
-    height: 20px;
     background-image: url(../images/color-left-arrow.png);
-    background-size: 22px;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 13px;
 }
 
 .maptwo.map-wrap .map-btn a:hover .color-arrow {
@@ -879,8 +849,6 @@ header .navbar {
 }
 
 .section-six .sec-title h2 span.text1 {
-    font-size: 60px;
-    line-height: 39.18px;
     color: #ffffff;
 }
 
@@ -889,9 +857,6 @@ header .navbar {
 }
 
 .section-six .sec-title span.text2 {
-    margin-top: 28px;
-    font-size: 36px;
-    line-height: 39.18px;
     font-weight: 700;
     color: #ffffff;
 }
@@ -1030,16 +995,16 @@ header .navbar {
     line-height: 27px;
     font-weight: 700;
     color: #1d1d1b;
+    display: block;
 }
 
 #mortage-accordion .panel-heading .panel-title a {
     display: block;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 65px;
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: 46px;
     background-position: 15px center;
-    padding-left: 65px;
 }
 #mortage-accordion .panel-heading .panel-title a[aria-expanded="true"] {
     background-image: url(../images/accordion-black-up-arrow.png);
@@ -1169,14 +1134,6 @@ header .navbar {
     background-repeat: repeat;
 }
 
-.section-plan {
-    padding-top: 40px;
-}
-
-.price_list {
-    margin-bottom: 50px;
-}
-
 .bootstrap-tab ul.tabnav {
     background: #8d7850;
     align-items: center;
@@ -1197,14 +1154,14 @@ header .navbar {
 .bootstrap-tab li {
     float: right;
     width: 100%;
-    border-top: 1px solid #fff;
-    border-left: 1px solid #fff;
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
 }
 .bootstrap-tab li:first-child {
-    border-right: 1px solid #fff;
+    border-right: 1px solid #ffffff;
 }
 .bootstrap-tab ul:last-child li {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #ffffff;
 }
 
 .bootstrap-tab ul.tabnav > li {
@@ -1216,7 +1173,7 @@ header .navbar {
 .subformsection .tabnav > li > a:hover,
 .subformsection .tabnav > li.active a {
     background: #1d1d1b;
-    color: #fff;
+    color: #ffffff;
 }
 
 .tab_table .tab-content {
@@ -1243,12 +1200,6 @@ table tr {
 .subformsection table th {
     background: #d8e7e9;
     color: #000;
-}
-.table_block2 th:first-child {
-    width: 20%;
-}
-.table_block2 th:last-child {
-    width: 80%;
 }
 .table_block2 th {
     background-color: #d8c48d;
@@ -1302,10 +1253,6 @@ table tr.disabled td img {
     font-size: 16px;
     color: #8d7850;
 }
-.pdfri_cls {
-    display: inline-block;
-    margin: 0px 32px;
-}
 .pdfri_cls > span {
     display: block;
     font-size: 14px;
@@ -1334,11 +1281,11 @@ table {
 }
 
 table tbody tr:nth-child(odd) {
-    background: #fff;
+    background: #ffffff;
 }
 
 table tbody tr:nth-child(even) {
-    background: #fff;
+    background: #ffffff;
 }
 table tbody tr.disabled {
     background: #e6e7e8;
@@ -1448,15 +1395,332 @@ ul.contact-list li a {
     margin-bottom: 0;
 }
 
+@media (max-width: 575px) {
+    .sec-one-box {
+        width: 100%;
+    }
+    .sec-title h2::before,
+    .sec-title h2::after {
+        width: 100%;
+    }
+    .payment-layout {
+        width: 100%;
+    }
+    .map-wrap::after {
+        width: 80%;
+    }
+    table th,
+    .price_list table tr td,
+    .tab_table .tabnav > li > a {
+        font-size: 12px;
+    }
+    
+    table tr td.pdf_cls {
+        padding: 10px;
+    }
+    .pdfri_cls {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+    .price-form form label,
+    .price-form form select,
+    .price-form form .chkbox,
+    .price-form form input[type="submit"] {
+        display: block;
+        margin: 15px auto;
+        width: 100%;
+    }
+    #mortage-accordion .panel-heading .panel-title a > span {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media  (min-width: 576px) and (max-width:767.98px){
+    .pdfri_cls {
+        display: inline-block;
+        margin: 0px 32px;
+    }
+    
+    .price-form form label,
+    .price-form form .chkbox,
+    .price-form form input[type="submit"] {
+        display: block;
+        margin: 15px auto;
+    }
+    .price-form form label,
+    .price-form form .chkbox {
+        text-align: right;
+    }
+    .price-form form select {
+        display: inline-block;
+        vertical-align: middle;
+        width: calc( 50% - 10px);
+    }
+    .price-form form select:nth-child(3) {
+        margin-left: 0;
+    }
+    .price-form form input[type="submit"] {
+        width: 100%;
+    }
+    
+    #mortage-accordion .panel-heading .panel-title a > span {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width:767.98px){
+    header {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .topheader {
+        display: none!important;
+    }
+    header .navbar-dark .navbar-toggler {
+        border: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    header .navbar-dark .navbar-toggler:focus {
+        outline: none;
+    }
+    header .navbar-brand img {
+        width: 190px;
+    }
+    header .navbar-collapse {
+        position: fixed;
+        top: 60px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #1d1d1b;
+        z-index: 999;
+        transition: 0.5s width;
+    }
+    .navbar-nav .nav-link {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .sec-two-content p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .section-two {
+        padding-top: 25px;
+        padding-bottom: 0;
+    }
+    .section-three {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .sec-three-content {
+        padding: 25px 25px 200px 25px;
+    }
+    .sec-three-content p {
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+    }
+    .section-four {
+        margin-top: 0;
+    }
+    .sec-title.text-left {
+        text-align: center!important;
+    }
+    .section-four .sec-title h2::after, .section-four .sec-title h2::before {
+        right: 0;
+        left: 0;
+    }
+    .sec-four-quote-text {
+        text-align: center;
+    }
+    .sec-four-quote {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .sec-four-desc {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .sec-four-desc p {
+        text-align: center;
+        line-height: 28px;
+    }
+    .sec-four-quote h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .sec-four-quote p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .carousel {
+        margin-top: 15px;
+    }
+    #myCarousel .carousel-indicators > li img {
+        height: 75px;
+    }
+    #myCarousel .carousel-indicators > li {
+        height: 75px;
+    }
+    .section-five {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .map-wrap {
+        margin-bottom: 50px;
+    }
+    .section-six .sec-title h2 span.text1 {
+        font-size: 44px;
+        line-height: 39.18px;
+    }
+    .section-six .sec-title span.text2 {
+        font-size: 24px;
+        line-height: 39.18px;
+        margin-top: 5px;
+    }
+    .section-seven {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .note p {
+        font-size: 16px;
+    }
+    table th,
+    .price_list table tr td,
+    .tab_table .tabnav > li > a {
+        font-size: 14px;
+    }
+    .section-plan {
+        padding-top: 25px;
+    }    
+    .table_block2 th {
+        width: 50%;
+    }
+    .document_sec ul li {
+        margin: 5px;
+        width: 130px;
+        height: 130px;
+        line-height: 130px;
+    }
+    .section-ten {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .section-eleven {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .footer-section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .footer-section .col-md-4 {
+        text-align: center;
+    }
+    .footer-section .col-md-4 > img {
+        margin-bottom: 25px;
+    }
+    .foot-title h4 {
+        margin-bottom: 15px;
+    }
+    ul.contact-list li span, ul.contact-list li a {
+        width: auto;
+    }
+    .copyright .px-5 {
+        padding-left: 15px!important;
+        padding-right: 15px!important;
+    }
+    .section-nine .note p {
+        margin-bottom: 15px;
+    }
+    .layout-left p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    #mortage-accordion .panel-collapse .panel-body p {
+        font-size: 16px;
+        line-height: 26px;
+        padding-right: 30px;
+    }
+    #mortage-accordion .panel-heading .panel-title a {
+        padding: 10px 10px 10px 45px;
+        background-size: 30px;
+        background-position: 10px center;
+    }
+    #accordion.panel-group .panel-body p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    #accordion .panel-title a {
+        background-size: 30px;
+        background-position: 10px center;
+    }
+    #accordion .title-mark span {
+        font-size: 18px;
+        padding: 10px 15px;
+        margin-left: 10px;
+    }
+    #accordion.panel-group .panel-body {
+        padding: 15px 50px 15px 15px;
+        min-height: 60px;
+    }
+    #accordion.panel-group .panel-body::before {
+        right: 15px;
+        top: 15px;
+    }
+    #accordion .panel-title a > span {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .map-wrap .map-btn a {
+        width: 80%;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .map-wrap .map-btn a span {
+        background-size: 16px;
+        width: 16px;
+        height: 14px;
+        margin-left: 7px;
+    }
+    .carousel-control-next, .carousel-control-prev {
+        top: 70px;
+        width: 40px;
+        height: 40px;
+    }
+    .carousel-control-next {
+        left: 0;
+    }
+    .carousel-control-prev {
+        right: 0;
+    }
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        width: 10px;
+        height: 18px;
+    }
+    #mortage-accordion .panel-collapse .panel-body p::before {
+        right: 0;
+    }
+    .mortage-right {
+        margin-bottom: 25px;
+    }
+}
+
 @media (min-width: 768px) {
+    .sec-three-content {
+        min-height: 577px;
+    }
+    .sec-four-desc {
+        min-height: 350px;
+    }
     .navbar-expand-md .navbar-nav {
         justify-content: space-between;
         flex: 1;
-    }
-
-    .navbar-expand-md .navbar-nav .nav-link {
-        padding-left: 1rem;
-        padding-right: 1rem;
     }
 
     #accordion .title-mark span:after {
@@ -1468,6 +1732,124 @@ ul.contact-list li a {
         top: 0;
         right: 90%;
         transform: skewX(-18deg);
+    }
+    
+    .carousel-inner {
+        width: calc(100% - 88px);
+        margin: 0 auto;
+    }
+
+    .carousel-item {
+        height: 373px;
+    }
+
+    #myCarousel .carousel-indicators {
+        width: calc(100% - 88px);
+    }
+
+    #myCarousel .carousel-indicators > li img {
+        height: 126px;
+    }
+    #myCarousel .carousel-indicators > li {
+        height: 126px;
+    }
+    .image-info {
+        padding-right: 44px;
+    }
+
+    .section-five {
+        padding-top: 225px;
+        padding-bottom: 300px;
+    }
+    .section-six .sec-title h2 span.text1 {
+        font-size: 60px;
+        line-height: 39.18px;
+    }
+    .section-six .sec-title span.text2 {
+        font-size: 36px;
+        line-height: 39.18px;
+        margin-top: 28px;
+    }
+
+    .section-plan {
+        padding-top: 40px;
+    }
+    
+    .price_list {
+        margin-bottom: 50px;
+    }
+    .table_block2 th:first-child {
+        width: 20%;
+    }
+    .table_block2 th:last-child {
+        width: 80%;
+    }
+    .pdfri_cls {
+        display: inline-block;
+        margin: 0px 32px;
+    }
+    .price-form form label,
+    .price-form form select,
+    .price-form form .chkbox,
+    .price-form form input[type="submit"] {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    a.logo {
+        text-align: center;
+    }
+    a.logo img {
+        display: block;
+        margin: 0 auto 30px;
+    }
+    .price-form form select {
+        width: 150px;
+    }
+    .price-form form label {
+        font-size: 14px;
+        line-height: 14px;
+    }    
+    .price-form form input[type="submit"] {
+        min-width: 100px;
+    }
+    .navbar-nav .nav-link {
+        padding: 0.5rem;
+    }
+    
+    .navbar-nav .nav-link {
+        text-align: center;
+        font-size: 14px;
+        line-height: 14px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .price-form form select {
+        margin-left: 5px;
+        width: 140px;
+    }
+    .price-form form input[type="submit"] {
+        min-width: 100px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1356px) {
+    .price-form form select {
+        margin-left: 5px;
+        width: 175px;
+    }
+    .price-form form input[type="submit"] {
+        min-width: 120px;
     }
 }
 
