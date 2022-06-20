@@ -29,6 +29,7 @@ $(document).ready(function(){
             return false;    
         } else {
             $('.navbar-collapse').removeClass('show').attr('aria-expanded', 'false');
+            $('#navbar-toggler-icon').removeClass('open');
         }
     });
 
