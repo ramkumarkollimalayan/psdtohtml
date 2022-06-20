@@ -1431,6 +1431,10 @@ ul.contact-list li a {
         display: block;
         margin: 15px auto;
         width: 100%;
+    }
+    .price-form form label,
+    .price-form form select,
+    .price-form form .chkbox {
         text-align: right;
     }
 
