@@ -1630,12 +1630,15 @@ ul.contact-list li a {
         top: 60px;
         right: 0;
         left: 0;
-        bottom: 0;
         background-color: #1d1d1b;
         z-index: 999;
         transition: 0.5s width;
     }
-    .navbar-nav .nav-link {
+    header .navbar-nav {
+        height: 100vh;
+        overflow-y: scroll;
+    }
+    header .navbar-nav .nav-link {
         font-size: 20px;
         line-height: 20px;
     }
