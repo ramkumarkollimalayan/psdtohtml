@@ -1419,10 +1419,6 @@ ul.contact-list li a {
     table tr td.pdf_cls {
         padding: 10px;
     }
-    .pdfri_cls {
-        display: inline-block;
-        vertical-align: middle;
-    }
     
     .price-form form label,
     .price-form form select,
@@ -1444,12 +1440,7 @@ ul.contact-list li a {
     }
 }
 
-@media  (min-width: 576px) and (max-width:767.98px){
-    .pdfri_cls {
-        display: inline-block;
-        margin: 0px 32px;
-    }
-    
+@media  (min-width: 576px) and (max-width:767.98px){    
     .price-form form label,
     .price-form form .chkbox,
     .price-form form input[type="submit"] {
@@ -1478,7 +1469,42 @@ ul.contact-list li a {
     }
 }
 
-@media (max-width:767.98px){
+@media (max-width:767.98px){  
+    .pdfri_cls {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 10px 10px 0;
+    }
+    .footer-section .align-self-center {
+        text-align: center;
+        margin-bottom: 20px;
+    } 
+    .aos-animate .sec-two-gallery .gallery-text {
+        opacity: 1;
+        right: 0;
+    }
+    .aos-animate .sec-two-gallery::before {
+        width: 512px;
+        opacity: 1;
+    }
+    .aos-animate .sec-two-gallery::after {
+        width: 512px;
+        opacity: 1;
+    }
+    .aos-animate.map-wrap .map-btn {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.79);
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+    .aos-animate.map-wrap .map-btn a {
+        opacity: 1;
+        visibility: visible;
+    }
     header {
         padding-top: 5px;
         padding-bottom: 5px;
@@ -1735,6 +1761,7 @@ ul.contact-list li a {
     }
     .foot-title h4 {
         margin-bottom: 15px;
+        text-align: left;
     }
     ul.contact-list li span, ul.contact-list li a {
         width: auto;
@@ -1895,7 +1922,7 @@ ul.contact-list li a {
     }
     .pdfri_cls {
         display: inline-block;
-        margin: 0px 32px;
+        margin: 5px 32px;
     }
     .price-form form label,
     .price-form form select,
