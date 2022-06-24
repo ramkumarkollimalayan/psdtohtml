@@ -24,6 +24,10 @@ select {
     text-align: right;
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 /* Bounce To Left */
 .hvr-bounce-to-left {
     display: inline-block;
@@ -932,22 +936,32 @@ header .navbar {
     min-height: 77px;
 }
 
-#accordion.panel-group .panel-body::before {
+#accordion.panel-group .panel-body p {
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #000000;
+    position: relative;
+}
+
+#accordion.panel-group .panel-body a {
+    color: #000000;
+    font-weight: 700;
+}
+
+#accordion.panel-group .panel-body p:last-child {
+    margin-bottom: 0;
+}
+
+#accordion.panel-group .panel-body p::before {
     content: "";
     position: absolute;
-    right: 28px;
-    top: 28px;
+    right: -36px;
+    top: 7px;
     background-color: #8e7b53;
     width: 18px;
     height: 18px;
-}
-
-#accordion.panel-group .panel-body p {
-    margin-bottom: 0;
-    font-size: 26px;
-    line-height: 27px;
-    font-weight: 700;
-    color: #000000;
 }
 
 #accordion.panel-group .panel-collapse {

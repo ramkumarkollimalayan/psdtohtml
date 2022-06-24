@@ -103,6 +103,52 @@ $(document).ready(function(){
         },500);
     });
 
+    $("#link_01").click(function () {
+        var navHeight = $(".header_nav .navbar").outerHeight();
+        $("html, body").animate({
+            scrollTop: $(".section-eleven").offset().top - navHeight
+        },500);
+    });
+
+    $("#link_02").click(function () {
+        var navHeight = $(".header_nav .navbar").outerHeight();
+        $("html, body").animate({
+            scrollTop: $(".section-eleven").offset().top - navHeight
+        },500);
+    });
+
+    $("#link_03").click(function () {
+        var navHeight = $(".header_nav .navbar").outerHeight();
+        $("html, body").animate({
+            scrollTop: $(".section-eleven").offset().top - navHeight
+        },500);
+    });
+
+    $("#link_04").click(function () {
+        var navHeight = $(".header_nav .navbar").outerHeight();
+        $("html, body").animate({
+            scrollTop: $(".section-eleven").offset().top - navHeight
+        },500);
+    });
+
+    $("#link_05").click(function () {
+        var navHeight = $(".header_nav .navbar").outerHeight();
+        $("html, body").animate({
+            scrollTop: $(".section-eleven").offset().top - navHeight
+        },500);
+    });
+
+    $("#link_06").click(function () {
+        var navHeight = $(".header_nav .navbar").outerHeight();
+        $("html, body").animate({
+            scrollTop: $(".section-eleven").offset().top - navHeight
+        },500);
+        
+        setTimeout(function () {
+            $("#doc_link02 > a")[0].click();
+        }, 2000);
+    });
+
     $("form.searchBox").submit(function (e) {
         var postData = $(this).serializeArray();
         postData[postData.length] = {
