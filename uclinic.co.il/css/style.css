@@ -535,12 +535,17 @@ footer {
         margin-bottom: 0;
     }
 
+    .m-sec-eight .sec-desc p:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
     .m-sec-seven .sec-desc p:not(:last-child) {
         margin-bottom: 53px;
     }
 
     .m-sec-five {
         margin-bottom: 35px;
+        margin-top: 35px;
     }    
     .f-sec-one {
         margin-top: 80px;
@@ -689,6 +694,10 @@ footer {
         line-height: 16px;
         font-weight: 400;
     }
+    .m-sec-seven .sec-desc {
+        padding-left: 30px;
+        padding-top: 30px;
+    }
 }
 
 @media (min-width:1200px) {}
@@ -709,6 +718,44 @@ footer {
     .sec-nine-left p {
         font-size: 16px;
         line-height: 20px;
+    }
+    .sec-desc h4 {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 10px;
+    }
+    .sec-desc p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .m-sec-six .sec-desc p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .sec-six-title h2 {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .m-sec-four .sec-desc ul {
+        margin-bottom: 50px;
+    }
+    .sec-two-right-title h2 {
+        font-size: 42px;
+        padding: 10px 20px;
+    }
+    .sec-two-right-title h3 {
+        font-size: 24px;
+    }
+    .sec-two-right-title {
+        margin-top: -40px;
+    }
+    .m-sec-three .sec-desc {
+        padding: 30px 100px 30px 30px;
+    }
+    
+    .m-sec-seven .sec-desc {
+        padding-left: 50px;
+        padding-top: 50px;
     }
 }
 
